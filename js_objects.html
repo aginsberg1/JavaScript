@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="motorcycleStuff"></p>
+
+<p id="dogs"></p>
+
+<script>
+
+<!-- A Motorcycle Object -->
+var motorcycle = {
+    make: "Yamaha",
+    model: "FZ-07",
+    classification: "Standard",
+    color: "Black",
+    weight: "397lb"
+};
+
+<!-- A Constructor for a Dog -->
+function dog(name, color, breed, gender, age) {
+    this.name = name;
+    this.color = color;
+    this.breed = breed;
+    this.gender = gender;
+    this.age = age;
+}
+
+var myDog = new dog("Cooper", "Brown", "Beagle", "Male", 5);
+var myParentsDog = new dog("Zeus", "White", "Lab", "Male", 10);
+
+document.getElementById("motorcycleStuff").innerHTML =
+"I want a: " + motorcycle.make + " " + motorcycle.model;
+
+document.getElementById("dogs").innerHTML =
+"My dog's name is " + myDog.name + ", he is a " + myDog.age + " year old " + myDog.breed + ". He is better than your dog, even though he's occassionally a bitey pain in the ass."
+</script>
+
+</body>
+</html>
